@@ -1,3 +1,5 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4Q_KWjUfPCU?si=fISmrz3GM9W8VoEl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## 1. Declaración de Variables
 
 - `var`: Declara variables de alcance global o de función, pero es propenso a errores por su alcance no restringido.
