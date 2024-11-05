@@ -1,6 +1,7 @@
 # Clase 1: Fundamentos SPA y Configuración con Vue.js 2 + Vuetify 2
 
-## 1. Preparación del Entorno (15 minutos)
+## 1. Preparación del Entorno
+Antes de comenzar a desarrollar una aplicación con Vue.js y Vuetify, es fundamental configurar correctamente nuestro entorno y organizar nuestros archivos. En este paso, estableceremos una estructura de archivos básica que nos ayudará a mantener nuestro proyecto organizado y a facilitar el desarrollo de una aplicación modular. También configuraremos el archivo index.html, que cargará las dependencias necesarias para Vue.js, Vuetify, y nuestro código personalizado.
 
 ### Estructura de Archivos Inicial
 ```
@@ -70,7 +71,8 @@ proyecto-crm/
 </html>
 ```
 
-## 2. Componentes Base (45 minutos)
+## 2. Componentes Base
+Los componentes son bloques reutilizables de código que representan distintas partes de nuestra interfaz de usuario, como el menú de navegación (Navbar) o el panel lateral (Sidebar). En esta sección, aprenderemos a construir estos componentes base usando Vuetify, aprovechando sus componentes predefinidos para darle un diseño atractivo y funcional a nuestra aplicación desde el inicio.
 
 ### Navbar Component (js/components/layout/Navbar.js)
 ```javascript
@@ -170,7 +172,8 @@ const Sidebar = {
 };
 ```
 
-## 3. Configuración del Router (30 minutos)
+## 3. Configuración del Router
+En una SPA (aplicación de página única), el enrutamiento es esencial para navegar entre las diferentes vistas sin recargar la página. Usaremos Vue Router para definir y manejar las rutas de nuestra aplicación. En este apartado, configuraremos las rutas básicas de la aplicación y veremos cómo asignar componentes a cada ruta, permitiendo que los usuarios naveguen fácilmente entre distintas secciones.
 
 ### router.js
 ```javascript
@@ -213,7 +216,8 @@ const router = new VueRouter({
 });
 ```
 
-## 4. Configuración del Store (30 minutos)
+## 4. Configuración del Store
+Para manejar el estado global de la aplicación, como el estado del menú lateral o la información del usuario, utilizaremos Vuex. Vuex es la solución de Vue.js para el manejo del estado, y nos permite compartir datos entre diferentes componentes de forma eficiente. En esta sección, configuraremos un store básico que almacenará la información esencial de nuestra aplicación y proveerá mecanismos para modificar ese estado de manera centralizada.
 
 ### store.js
 ```javascript
@@ -240,7 +244,8 @@ const store = new Vuex.Store({
 });
 ```
 
-## 5. Inicialización de la Aplicación (15 minutos)
+## 5. Inicialización de la Aplicación
+Ahora que tenemos nuestros componentes, el enrutador y el estado configurados, es momento de inicializar la aplicación. En este punto, combinaremos todas las piezas configuradas (router, store y Vuetify) en un solo punto de inicio (main.js) y montaremos la aplicación en el elemento principal del DOM, estableciendo así el flujo de funcionamiento básico de nuestra SPA.
 
 ### main.js
 ```javascript
@@ -274,7 +279,8 @@ new Vue({
 });
 ```
 
-## Ejercicios Prácticos (15 minutos)
+## Ejercicios Prácticos
+Con los fundamentos establecidos, es momento de practicar. Los ejercicios prácticos nos permitirán aplicar lo aprendido personalizando aspectos de Vuetify, añadiendo nuevas rutas y extendiendo el menú lateral. Estos ejercicios refuerzan los conceptos clave de personalización, navegación y manejo de interfaces complejas, dándonos experiencia práctica en la construcción de aplicaciones Vue.js.
 
 1. Personalizar el tema de Vuetify
    - Modificar colores primarios y secundarios
@@ -289,12 +295,16 @@ new Vue({
    - Implementar navegación anidada
 
 ## Tarea para Casa
+La tarea está diseñada para afianzar los conceptos vistos en clase. A través de ejercicios prácticos como personalizar el dashboard, implementar una página de error 404, y hacer persistente el estado del menú lateral, los estudiantes podrán consolidar sus conocimientos y mejorar la funcionalidad de su aplicación. Estos ejercicios servirán para comprender mejor cómo crear una aplicación SPA completa y responsiva.
+
 1. Personalizar el dashboard con al menos 4 widgets diferentes
 2. Implementar persistencia del estado del sidebar en localStorage
 3. Crear una página de error 404 personalizada
 4. Agregar transiciones entre rutas
 
 ## Recursos Adicionales
+Para ampliar nuestro conocimiento y resolver posibles dudas que puedan surgir en el desarrollo, es útil contar con recursos de consulta. Aquí se incluyen enlaces a la documentación oficial de Vue.js 2, Vuetify, Vue Router, y Vuex. Estos recursos ofrecen información detallada y ejemplos prácticos para ayudar en el aprendizaje y la resolución de problemas al desarrollar con Vue.js.
+
 - [Documentación oficial de Vue.js 2](https://v2.vuejs.org/)
 - [Documentación de Vuetify 2](https://v2.vuetifyjs.com/)
 - [Guía de Vue Router](https://v3.router.vuejs.org/)
